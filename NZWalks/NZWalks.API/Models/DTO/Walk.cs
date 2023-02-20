@@ -1,4 +1,4 @@
-﻿namespace NZWalks.API.Models.Domain
+﻿namespace NZWalks.API.Models.DTO
 {
     public class Walk
     {
@@ -9,11 +9,8 @@
         public Guid WalkDifficultyId { get; set; }
 
         //Navigation Properties
-        //It provides a way to navigate an association between two entity types. Every object can have a navigation property for every relationship in which it participates
 
-        public Region Region { get; set; }  
+        public Region Region { get; set; }
         public WalkDifficulty WalkDifficulty { get; set; }
-
-
     }
 }
